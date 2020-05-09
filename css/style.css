@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.clear {
+    clear: both;
+}
+
+/*header*/
+.aviso-covid {
+    background-color: rgb(208, 213, 218);
+    height: 40px;
+    width: 100%;
+}
+
+.aviso-covid p {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.aviso-covid a {
+    color: black;
+    font-size: 14px;
+}
+
+.navbar #logo{
+    width: 10%; 
+    height: 20%;
+    margin-left: 40px;
+}
+
+.collapse .navbar-nav .nav-link {
+    color: black;
+    margin-left: 10px;
+    font-family: 'Mukta', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    background-color: #F1F3F6 ;
+    border-radius: 20px;
+
+}
+
+/*experiencia*/
+.experiencia ul {
+    float: right;
+    margin-right: 17%;
+}
+
+.experiencia ul li {
+    display: inline-block;
+}
+
+.experiencia ul li a {
+    font-family: 'Mukta', sans-serif;
+}
+
+.experiencia ul li a:hover {
+    color: #A7A8A9;
+}
+
+.experiencia ul li #novo {
+    color: white;
+    background: rgb(57,15,84);
+    background: linear-gradient(90deg, rgba(57,15,84,1) 0%, rgba(149,29,253,1) 30%, rgba(244,177,84,1) 69%);
+    border-radius: 5px;
+    padding: 4px 5px 4px 5px;
+    font-size: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.experiencia ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 10px 10px 10px;
+}
+
+/*Checkin*/
+form {
+    max-width: 1100px;
+    margin-left: 140px;
+}
+
+.buscar {
+    border: 1px solid #CCC;
+    margin: 10px;
+    border-radius: 10px 10px;
+    display: flex;
+}
+
+.buscar-form {
+    border-right: 1px solid #CCC;
+    margin: 2px;
+    position: relative;
+    width: 100%;
+}
+
+.buscar-form label {
+    font-size: 16px;
+    font-family: 'Mukta', sans-serif;
+    padding: 5px;
+    display: inline-block;
+}
+
+.buscar-form input {
+    cursor: pointer;
+    padding: 5px 0 5px 5px;
+    border: none;
+    outline: none;
+}
+
+.buscar-date {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.src {
+    margin-right: 15px;
+}
+
+.src button {
+    background-color: rgba(26, 22, 22, 0.884);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none !important;
+    margin: 20px 5px 10px 15px;
+    cursor: pointer;
+    border: none;
+}
+
+#title {
+    margin-top: 30px;
+}
+
+#title h1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(57,15,84);
+}
+
+/*main*/
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 80px;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.card .card-img-top{
+    border-radius: 10px 10px 0 0;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: translateY(-20px);
+    box-shadow: 10px 20px 14px 0px rgb(145, 145, 139);
+}
+
+.card .card-title{
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.card .card-text {
+    text-align: center;
+}
+
+/*Footer*/
+#myFooter{
+    border-top: 1px solid #DDDDDD;
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    background-color: rgb(247, 245, 245);
+}
+
+#myFooter .row {
+    margin-bottom: 30px;
+}
+
+#myFooter .row .col-sm-3 {
+    padding: 30px 0 0 50px;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+#myFooter .row ul li {
+    padding: 8px 0 8px 0;
+}
+
+#myFooter .row ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+#myFooter .social-icons{
+    border-top: 1px solid #ccc;
+    background-color:white;
+    text-align: center;
+
+}
+
+#myFooter .social-icons h2 {
+    color: black;
+    font-size: 14px;
+    margin-top: 40px;
+   
+}
+
+#myFooter .social-icons a {
+    font-size: 22px;
+    color: #9fa3a9;
+    padding: 10px;
+    transition: 0.2s;
+    line-height: 68px;
+}
+
+#myFooter .social-icons a:hover {
+    text-decoration: none;
+}
+
+#myFooter .social-icons i {
+    font-size: 23px;
+}
+
+#myFooter .linkedin:hover {
+    color: #0077e2;
+}
+
+#myFooter .instagram:hover {
+    color: #e23a42fd;
+}
+
+#myFooter .github:hover {
+    color: black;
+}
+ /*Fim footer*/
+
+/*media queries*/
+@media screen and (max-width: 767px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .experiencia ul li input {
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .navbar #logo {
+       width: 18%;
+       height: 25%;
+       margin-left: 0px;
+    }
+
+    form{
+     margin-left: 0
+       
+    }
+
+    #myFooter .row .col-sm-3{
+        padding: 30px;
+    }
+    
+}
+
+
+
+

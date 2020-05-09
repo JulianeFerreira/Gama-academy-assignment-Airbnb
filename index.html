@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Tags SEO-->
+    <meta name="descripton" content="Aluguéis por temporada, Acomodações, Experiências e Lugares - Airbnb ">
+    <meta name="keywords" content="Viagens inesquecíveis. Encontre aventuras próximas ou 
+    distantes de você e acesse acomodações, experiências e lugares únicos em todo o mundo.">
+    <meta name="author" content="Juliane Ferreira de melo">
+    <!--Tags Link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Ubuntu:ital,wght@0,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico">
+    <script src="https://kit.fontawesome.com/9be633d813.js" crossorigin="anonymous"></script>
+
+    <title>Projeto Airbnb</title>
+</head>
+
+<body>
+    <!--header-->
+    <div class="aviso-covid">
+        <p>Confira infromações atualizadas sobre nossas
+            políticas de cancelamento e ações em resposta à COVID-19. <a href="#">Saiba mais</a></p>
+    </div>
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <img id="logo" src="imagens/logo.png" alt="Logotipo do site Airbnb">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li>
+                    <a class="nav-link" href="#">Entre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cadastre-se</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ajuda</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="clear"></div>
+
+    <!--experiência-->
+    <div class="experiencia">
+        <ul>
+            <li>
+                <a href="#">Lugares para ficar</a>
+            </li>
+            <li>
+                <a href="#">Estadias longas</a>
+            </li>
+            <li>
+                <a href="#">Experiências</a>
+            </li>
+            <li>
+                <a href="#">Experiências Online</a>
+            </li>
+            <li>
+                <input id="novo" type="submit" name="acao" value="NOVO">
+            </li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+
+    <!--Checkin-->
+    <form>
+        <div class="buscar">
+            <div class="buscar-form">
+                <label for="local">LOCALIZAÇÃO</label>
+                <br>
+                <input id="localizacao" type="text" placeholder="Para onde você vai?" required="">
+            </div>
+
+            <div class="buscar-form">
+                <label for="calendario">CHECK-IN/CHECKOUT</label>
+                <br>
+                <div class="buscar-date">
+                    <input id="calendario" type="date" placeholder="Insira as datas">
+                </div>
+            </div>
+
+            <div class="buscar-form">
+                <label for="numhospedes">HÓSPEDES</label><br>
+                <input id="num-hospedes" type="number" placeholder="Quantas pessoas?" min="0">
+            </div>
+            <div class="src">
+                <button type="submit">Buscar</button>
+            </div>
+        </div>
+    </form>
+    <div class="clear"></div>
+
+    <!--main-->
+    <div id="title">
+        <h1>Seja hóspede ou anfitrião no Brasil, e em qualquer lugar do mundo.</h1>
+    </div>
+
+    <!--cards-->
+    <div class="container-fluid">
+        <div id="cards"></div>
+    </div>
+
+    <!--footer-->
+    <footer id="myFooter">
+        <div class="row">
+            <div class="col-sm-3">
+                <h5>SOBRE</h5>
+                <ul>
+                    <li><a href="#">Diversidade e pertencimento</a></li>
+                    <li><a href="#">Acessibilidade</a></li>
+                    <li><a href="#">Confiança e segurança</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h5>COMUNIDADE</h5>
+                <ul>
+                    <li><a href="#">Airbnb Magazine</a></li>
+                    <li><a href="#">Airbnb for Work</a></li>
+                    <li><a href="">Convide amigos</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h5>ANFITRIÃO</h5>
+                <ul>
+                    <li><a href="#">Hospede em sua acomodação</a></li>
+                    <li><a href="#">Ofereça uma experiência</a></li>
+                    <li><a href="#">Hospedagem responsável</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h5>ATENDIMENTO</h5>
+                <ul>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Atendimento ao Bairro</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-icons">
+            <h2>Desenvolvido por <b>Juliane Ferreira</b> © 2020 </h2>
+            Siga-me <a href="https://github.com/JulianeFerreira" target="_blank" class="github"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/juliane-ferreira/" target="_blank" class="linkedin"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/juliane_ferreiramelo/" target="_blank" class="instagram"><i
+                    class="fa fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
